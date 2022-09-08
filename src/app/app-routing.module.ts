@@ -6,8 +6,8 @@ import { NavbarComponent } from './navbar/navbar.component';
 const routes: Routes = [
   { path: '', component: NavbarComponent },
   { path: 'dashboard', component: DashboardComponent },
-  { path: 'challenges', component: NavbarComponent },
-  { path: 'about', component: NavbarComponent },
+  // { path: 'challenges', component: NavbarComponent },
+  // { path: 'about', component: NavbarComponent },
 ];
 
 @NgModule({
