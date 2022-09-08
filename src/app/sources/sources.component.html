@@ -69,13 +69,14 @@
 
 <form action="src/app-sources/sources.news.component.html">
 	<input type="file" class="btn btn-dark"/>
-	Ajouter une source
 </form>
-<div class="row align-items">
+<div *ngIf="!showAddSource">
+	<button class=" btn btn-primary" (click)="showAddSource=!showAddSource">
+		Ajouter une source
+	</button>
+</div>
+<div class="row align-items" *ngIf="showAddSource">
 	<div class="col-6">
-
-		<h2>Ajouter une source</h2>
-
 		<form>
 			<div class="form-group">
 				<label for="disabledTextInput">Titre de la source</label>
@@ -91,8 +92,9 @@
 					<option>DESIGN</option>
 				</select>
 			</div>
-			<button type="button" class="btn btn-light">Annuler</button>
-			<input type="file" class="btn btn-dark"/>Ajouter la source
+			<button type="button" class="btn btn-light" (click)="showAddSource=false">Annuler</button>
+			<input type="file" class="btn btn-dark"/>
+			<button class="btn btn-primary">Ajouter une source</button>
 		</form>
 	</div>
 </div>

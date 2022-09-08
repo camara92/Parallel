@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./sources.component.scss']
 })
 export class SourcesComponent implements OnInit {
-
+  showAddSource = false;
   constructor() { }
 
   ngOnInit(): void {
