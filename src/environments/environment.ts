@@ -1,12 +1,12 @@
 // This file can be replaced during build by using the `fileReplacements` array.
 // `ng build` replaces `environment.ts` with `environment.prod.ts`.
 // The list of file replacements can be found in `angular.json`.
-import { initializeApp } from "firebase/app";
-import { getAnalytics } from "firebase/analytics";
 
 export const environment = {
   production: false,
-  firebaseConfig: {
+};
+
+export const firebaseConfig = {
     apiKey: "AIzaSyC81lpgAhO0VYsjg0yjpgPurRxkqTitcoM",
     authDomain: "parallel-e5367.firebaseapp.com",
     projectId: "parallel-e5367",
@@ -14,9 +14,7 @@ export const environment = {
     messagingSenderId: "441111621966",
     appId: "1:441111621966:web:3316d801f4d2def5f96e1f",
     measurementId: "G-2H7BR98YT2"
-  }
-};
-
+}
 
 // Import the functions you need from the SDKs you need
 

@@ -9,8 +9,14 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { ChallengesComponent } from './challenges/challenges.component';
 import { AboutComponent } from './about/about.component';
 import { SourcesComponent } from './sources/sources.component';
-import { environment } from "src/environments/environment";
+import { environment, firebaseConfig } from "src/environments/environment";
 import { ReactiveFormsModule } from '@angular/forms';
+
+import { AngularFireModule } from "@angular/fire/compat";
+import { AngularFireAuthModule } from "@angular/fire/compat/auth";
+import { AngularFireStorageModule } from '@angular/fire/compat/storage';
+import { AngularFirestoreModule } from '@angular/fire/compat/firestore';
+
 
 @NgModule({
   declarations: [
@@ -26,6 +32,13 @@ import { ReactiveFormsModule } from '@angular/forms';
     AppRoutingModule,
     NgbModule,
     ReactiveFormsModule,
+
+    // Initialize
+    AngularFireModule.initializeApp(firebaseConfig),
+    AngularFirestoreModule, // firestore
+    AngularFireAuthModule, // auth
+    AngularFireStorageModule // storage
+
   ],
   providers: [],
   bootstrap: [AppComponent]
