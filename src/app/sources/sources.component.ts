@@ -47,10 +47,6 @@ export class SourcesComponent implements OnInit {
     this.db.collection("sources").add(formValue).then(res=>{
     console.log(res);
     });
-
-
   }
-
-
   
 }
