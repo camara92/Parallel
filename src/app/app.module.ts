@@ -10,6 +10,7 @@ import { ChallengesComponent } from './challenges/challenges.component';
 import { AboutComponent } from './about/about.component';
 import { SourcesComponent } from './sources/sources.component';
 import { environment } from "src/environments/environment";
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -24,6 +25,7 @@ import { environment } from "src/environments/environment";
     BrowserModule,
     AppRoutingModule,
     NgbModule,
+    ReactiveFormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
