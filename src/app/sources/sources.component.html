@@ -4,14 +4,15 @@
 		<h1>Les sources</h1>
 
 		<div class="dropdown">
-			<button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-				Par Catégorie
-			</button>
-			<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-				<a class="dropdown-item" href="#">HTML/CSS</a>
-				<a class="dropdown-item" href="#">JAVASCRIPT</a>
-				<a class="dropdown-item" href="#">SEO</a>
-				<a class="dropdown-item" href="#">DESIGN</a>
+			<div class="form-group">
+				<label for="disabledSelect"></label>
+				<select id="disabledSelect" class="form-control">
+					<option>selectionner une Catégorie</option>
+					<option>HTML/CSS</option>
+					<option>JAVASCRIPT</option>
+					<option>SEO</option>
+					<option>DESIGN</option>
+				</select>
 			</div>
 		</div>
 
@@ -86,7 +87,7 @@
 				<label for="disabledSelect"></label>
 				<select id="disabledSelect" class="form-control">
 					<option>selectionner une Catégorie</option>
-					<option>HTML/CSS</option>
+					<option>{{ city }}</option>
 					<option>JAVASCRIPT</option>
 					<option>SEO</option>
 					<option>DESIGN</option>

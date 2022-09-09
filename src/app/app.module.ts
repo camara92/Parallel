@@ -9,6 +9,7 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { ChallengesComponent } from './challenges/challenges.component';
 import { AboutComponent } from './about/about.component';
 import { SourcesComponent } from './sources/sources.component';
+import { environment } from "src/environments/environment";
 
 @NgModule({
   declarations: [
@@ -22,7 +23,7 @@ import { SourcesComponent } from './sources/sources.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    NgbModule
+    NgbModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
