@@ -78,15 +78,14 @@
 </div>
 <div class="row align-items" *ngIf="showAddSource">
 	<div class="col-6">
-		<form>
+		<form *ngIf="addSourcesForm" [formGroup]="addSourcesForm" (ngSubmit)="onSubmit()">
 			<div class="form-group">
 				<label for="disabledTextInput">Titre de la source</label>
-				<input type="text" id="disabledTextInput" class="form-control" placeholder="Titre de la source">
+				<input type="text" formControlName="title" id="disabledTextInput" class="form-control" placeholder="Titre de la source">
 			</div>
 			<div class="form-group">
 				<label for="disabledSelect"></label>
-				<select id="disabledSelect" class="form-control">
-					<option>selectionner une Catégorie</option>
+				<select formControlName="category" id="disabledSelect" class="form-control">
 					<option>HTML/CSS</option>
 					<option>JAVASCRIPT</option>
 					<option>SEO</option>
@@ -95,7 +94,7 @@
 			</div>
 			<button type="button" class="btn btn-light" (click)="showAddSource=false">Annuler</button>
 			<input type="file" class="btn btn-dark"/>
-			<button class="btn btn-primary">Ajouter une source</button>
+			<button type="submit" class="btn btn-primary">Ajouter une source</button>
 		</form>
 	</div>
 </div>
